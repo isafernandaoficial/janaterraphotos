@@ -346,16 +346,25 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 300;
-  height: 56px;
+  height: 58px;
   background: var(--w);
-  border-bottom: 1px solid rgba(138,107,70,.1);
+  border-bottom: 2px solid var(--linen);
+  box-shadow: 0 2px 12px rgba(44,38,32,.08);
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
 }
+.tb-logo {
+  font-family: var(--ff-d);
+  font-size: 1.05rem;
+  letter-spacing: .12em;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 400;
+}
 .tb-logo { font-family: var(--ff-d); font-size: .98rem; letter-spacing: .12em; color: var(--dark); text-decoration: none; }
 .hbg { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-.hbg span { display: block; width: 22px; height: 1.5px; background: var(--dark); transition: transform .3s, opacity .3s; }
+.hbg span { display: block; width: 24px; height: 2px; background: var(--bronze); border-radius: 2px; transition: transform .3s, opacity .3s; }
 .hbg.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .hbg.open span:nth-child(2) { opacity: 0; }
 .hbg.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
@@ -663,7 +672,7 @@ footer { background:var(--dark); padding:40px 56px; display:flex; align-items:ce
 @media(max-width:960px){
   .sidenav{display:none}
   .topbar{display:flex}
-  .pw{margin-left:0;padding-top:56px}
+  .pw{margin-left:0;padding-top:58px}
   section{padding:56px 20px}
   .h-content{padding:0 20px 68px}
   .h-scroll{display:none}
